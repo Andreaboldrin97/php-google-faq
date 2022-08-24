@@ -20,7 +20,7 @@
                 <div>
                     <span class="d-flex">
                         <img class="img-logo" src="https://www.amiciapple.it/wp-content/uploads/2013/09/logo6w-1.png" alt="">
-                        <a class="navbar-brand ps-2" href="#">Privacy e termini</a>
+                        <a class="navbar-brand ps-2 fs-4" href="#">Privacy e termini</a>
                     </span>
                 </div>
                 <div>
