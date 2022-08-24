@@ -14,39 +14,30 @@
 </head>
 
 <body>
-    <nav class="navbar fixed-top border-bottom bg-white">
+    <nav class=" fixed-top border-bottom bg-white">
         <div class="container-fluid">
-            <div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <a class="navbar-brand ps-2" href="#">Privacy e termini</a>
-            </div>
-            <div>
-                <div class="profile d-flex justify-content-center align-items-center">
-                    <div class="text-white">A</div>
+            <div class="d-flex justify-content-between w-100 pt-2">
+                <div>
+                    <span class="d-flex">
+                        <img class="img-logo" src="https://www.amiciapple.it/wp-content/uploads/2013/09/logo6w-1.png" alt="">
+                        <a class="navbar-brand ps-2" href="#">Privacy e termini</a>
+                    </span>
+                </div>
+                <div>
+                    <div class="profile d-flex justify-content-center align-items-center">
+                        <div class="text-white">A</div>
+                    </div>
                 </div>
             </div>
 
-            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Privacy e termini</h5>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                        <li class="nav-item">
-                            <a class="nav-link " aria-current="page" href="#">Google Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Norme sulla privacy</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Termini di servizio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#">Domande frequenti</a>
-                        </li>
+            <div class="row">
+                <div class="col-12">
+                    <ul class="header-list d-flex">
+                        <li class="pe-3">Introduzione</li>
+                        <li class="px-3">Norme sulla privacy</li>
+                        <li class="px-3">Termini di servizio</li>
+                        <li class="px-3">Tecnologie</li>
+                        <li class="selected px-3">Domande frequenti</li>
                     </ul>
                 </div>
             </div>
@@ -123,7 +114,7 @@
         foreach ($faq as $item) {
         ?>
             <div class="pt-5 m-3 container-lg d-flex justify-content-center">
-                <div>
+                <div class="pt-2">
                     <h4 class="pt-3">
                         <?php
                         echo $item['question'];
