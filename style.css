@@ -1,6 +1,9 @@
 nav{
     padding: 0;
 }
+.user>i{
+    color: gray;
+}
 .profile{
     height: 40px;
     width: 40px;

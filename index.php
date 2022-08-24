@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="style.css">
     <!-- CSS BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <!-- import fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -23,7 +24,8 @@
                         <a class="navbar-brand ps-2 fs-4" href="#">Privacy e termini</a>
                     </span>
                 </div>
-                <div>
+                <div class="d-flex user">
+                    <i class="fa-solid fa-align-right p-3"></i>
                     <div class="profile d-flex justify-content-center align-items-center">
                         <div class="text-white">A</div>
                     </div>
@@ -114,7 +116,7 @@
         foreach ($faq as $item) {
         ?>
             <div class="pt-5 m-3 container-lg d-flex justify-content-center">
-                <div class="pt-2">
+                <div class="pt-3">
                     <h4 class="pt-3">
                         <?php
                         echo $item['question'];
