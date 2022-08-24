@@ -116,7 +116,7 @@
         foreach ($faq as $item) {
         ?>
             <div class="pt-5 m-3 container-lg d-flex justify-content-center">
-                <div class="pt-3">
+                <div class="pt-5">
                     <h4 class="pt-3">
                         <?php
                         echo $item['question'];
