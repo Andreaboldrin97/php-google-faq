@@ -13,13 +13,14 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-dark bg-dark fixed-top">
+    <nav class="navbar fixed-top border-bottom">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">DOMANDE FREQUENTI</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <a class="navbar-brand" href="#">DOMANDE FREQUENTI</a>
+
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
                 <div class="offcanvas-header">
                     <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Privacy e termini</h5>
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
