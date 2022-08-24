@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <nav class="navbar fixed-top border-bottom">
+    <nav class="navbar fixed-top border-bottom bg-white">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
                 <span class="navbar-toggler-icon"></span>
@@ -114,55 +114,81 @@
         <?php
         foreach ($faq as $item) {
         ?>
-            <div class="pt-5 m-3">
-                <h4 class="pt-3">
-                    <?php
-                    echo $item['question'];
-                    ?>
-                </h4>
-
-                <?php
-                $answers = $item['answer'];
-                for ($i = 0; $i < count($answers); $i++) {
-                ?>
-                    <p class="pt-2">
+            <div class="pt-5 m-3 container-lg d-flex justify-content-center">
+                <div>
+                    <h4 class="pt-3">
                         <?php
-                        echo $answers[$i];
+                        echo $item['question'];
                         ?>
-                    </p>
+                    </h4>
 
-                <?php
-                }
-                ?>
-                <h6>
                     <?php
-                    if (isset($item['sub_question'])) {
-                        $sub_question = $item['sub_question'];
-                        echo $sub_question;
-                    }
+                    $answers = $item['answer'];
+                    for ($i = 0; $i < count($answers); $i++) {
                     ?>
-                </h6>
-
-                <?php
-                if (isset($item['sub_answer'])) {
-                    $sub_answer = $item['sub_answer'];
-                    for ($i = 0; $i < count($sub_answer); $i++) {
-                ?>
                         <p class="pt-2">
                             <?php
-                            echo $sub_answer[$i];
+                            echo $answers[$i];
                             ?>
                         </p>
-                <?php
+
+                    <?php
                     }
-                };
-                ?>
+                    ?>
+                    <h6>
+                        <?php
+                        if (isset($item['sub_question'])) {
+                            $sub_question = $item['sub_question'];
+                            echo $sub_question;
+                        }
+                        ?>
+                    </h6>
+
+                    <?php
+                    if (isset($item['sub_answer'])) {
+                        $sub_answer = $item['sub_answer'];
+                        for ($i = 0; $i < count($sub_answer); $i++) {
+                    ?>
+                            <p class="pt-2">
+                                <?php
+                                echo $sub_answer[$i];
+                                ?>
+                            </p>
+                    <?php
+                        }
+                    };
+                    ?>
+                </div>
+
             </div>
 
         <?php
         }
         ?>
     </main>
+
+    <footer>
+        <div class="container-lg">
+            <div class="row">
+                <div class="col-6">
+                    <ul class="footer-list">
+                        <li>Google</li>
+                        <li>Tutto su Google</li>
+                        <li>Privacy</li>
+                        <li>Termini</li>
+                    </ul>
+                </div>
+                <div class="col-6 d-flex justify-content-end">
+                    <span><i class="fa-solid fa-message"></i></span>
+                    <select name="pets" id="pet-select" class="ms-3">
+                        <option value="italiano">Italiano</option>
+                        <option value="espanol">Espanol</option>
+                        <option value="english">English</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
