@@ -1,3 +1,9 @@
+.profile{
+    height: 50px;
+    width: 50px;
+    background-color: rgb(220, 82, 82);
+    border-radius: 50%;
+}
 main{
     width: 55%;
     margin: 0 auto;
